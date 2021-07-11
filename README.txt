@@ -18,6 +18,11 @@ language       R
 version.string R version 4.1.0 (2021-05-18)
 nickname       Camp Pontanezen
 
+CONFIG:
+You need to set your workdir() to the 'courseproject' folder, when typed getWd() you want an output like this:
+
+ex: > getwd()
+[1] "C:/Users/myUser/Documents/teste/courseproject"
 
 The main script of this project is the run_analysis.R; it manipulate data from 'UCI HAR DATASET' folder (it also contains a README file with complete dataset documentation). 
 
