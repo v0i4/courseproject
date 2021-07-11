@@ -149,3 +149,7 @@ df_tidy <-  df_exctracted_data  %>%
 df_tidy_output_file <- "result.txt"
 write.table(df_tidy, file = df_tidy_output_file , sep = "\t", col.names = TRUE, row.names = FALSE, quote = FALSE)
 #END OF STEP 5
+
+#FINAL STEP - GENERATE A CODEBOOK
+codebook_vars <- colnames(df_tidy)
+write.table(codebook_vars, file = "codebook.txt" , sep = "\t", col.names = FALSE, row.names = FALSE, quote = FALSE)
